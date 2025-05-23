@@ -1,0 +1,525 @@
+<!-- 
+    1 konsep container
+    2 konsep semantic element: u/ memudahkan SEO (Search engine optimizer - agar di search google paling atas - kalau di google paling atas jadi cuan, karena pesaing bisnisnya posisinya dibawah, kalau di bawah harus scroll dulu, harus gerakin mouse lebih banyak, dan terlihat lebih professional)
+    3 margin inline = margin left & right, bisa diisi 2 value, kalau atas bawah block
+    4 header title
+    5 span 
+    6 header navigation, nav
+    7 anchor element
+    8 supaya posisi header navigation ga atas bawah, header kita buat display flex, agar semua anak cucu header jadi sejajar kiri kanan
+    9 justify content di header itu untuk menjauhkan kiri kanan hanya untuk anak kandungnya 
+    10 supaya header navigation ga nyangkut dikasih align items center, tp wajib ada display flex, karena itu a/ syarat
+    11 supaya a nya gak nempel, ibunya (header navigation kita kasih gap)
+    12 tambahin icon menu sama close di header sebagai anak kandung,lalu dihilangkan dengan display-none
+
+    urusan header, navbar sudah khatam alhamdulillah untuk tampilan desktop (komputer / laptop, >= 1024px)
+
+    hero section (section = bagian)
+    13 wrapper (bungkus)
+    14 membagi section menjadi 2 bagian dengan width 50%
+    15 menampilkan gambar di website
+    16 mengatur posisi anak agar ditengah secara horizontal dengan justify content center, kalau atas bawah dengan align items center, keduanya wajib dengan syarat digandengkan dengan display flex
+    17 menampilkan h1 di wrapper main
+    18 menampilkan p di wrapper main
+    19 menampilkan buttons 
+    20 border button
+    21 bg color button
+    22 border radius button
+    23 menyelipkan icon di button
+    24 mengatur posisi icon dan span didalam button
+    25 keutamaan font-size rem daripada px
+    26 padding button
+    27 mengatur jarak antar button
+    28 mengatur jarak vertikal antar elemen 
+    
+    section dengan layout flex 2 bagian sudah tamat
+    yg non responsive, alhamdulillah
+
+    29 media query
+    30 patokan menentukan angka di media query
+    31 mengatur header navigation dengan display none
+    32 mengatur layout bawaan kiri kanan menjadi responsive atas bawah, 
+    33 mengatur ukuran gambar pada keadaan responsive
+
+    34 menganalisa properti bawaan desktop yang harus disesuaikan dengan layar tablet/mobile, (misalnya width. font-size, text-align, margin container)
+    35 menganalisa ukuran elemen yang menjadi child (case header title sbg anak header yg akan di kondisikan ukuran nya di tampilan mobile)
+    1.header,aside img, main h1, main p, buttons
+    36 mengempeskan margin atas bawah tiap elemen agar elemen-elemen hero section dapat terlihat pada tampilan mobile dengan menggunakan margin-block 0
+    37 setelah mereset margin, mengatur margin top dan bottom tiap elemen hero section agar terlihat lebih estetik di tampilan mobile
+
+    1. sebutkan 3 atau > properti css bawaan desktop yang harus disesuaikan dengan tampilan mobile
+    2. sebutkan yg mana selector, properti, dan value pada css berikut:
+    .wrapper main{
+        display:flex;
+    }
+    3.properti yg digunakan u/ mereset jarak atas bawah antar elemen a/ ....
+    4.setelah margin vertikal direset, agar tampilan lebih estetik kita atur margin.... dan margin ... dari tiap elemen yg dibutuhkan.
+
+    38 mengambil font dari google font
+    39 cara import dari google fonts
+    40 cara mengganti font-family
+    41 mengatur ukuran dengan clamp
+    42 menampilkan nav button di tampilan mobile
+
+    1. angka awal pada argumen clamp digunakan untuk menentukan value .... (terkecil/terbesar)
+2. link google font yg kita import disematkan .... style CSS (didalam/diluar)
+3. properti CSS yg digunakan u/ mengubah jenis teks adalah ...
+4. properti yg digunakan u/ menampilkan atau menyembunyikan elemen
+5. shortcut u/ masking image di figma adalah ...
+6. 1 properti margin yang mengatur atas dan bawah adalah ...
+7. properti elemen a agar tidak memiliki garis bawah bawaan ... 
+
+install windows 11 from usb
+
+    43 shortcut kecilin semua:
+        ctrl K , ctrl 0
+    43 lebarin semua:
+        ctrl k , ctrl j
+    44 text-align g butuh display flex
+    
+    45 selector u/ memilih seluruh elemen = *
+    46 kenapa dipakai, karena h1-h6 , masing" punya margin yg membuat sulit u/ diatur, sehingga harus direset dengan margin 0
+    47 mereset margin elemen html supaya tidak muncul margin bawaan yang membuat desain berantakan
+    48 scroll behaviour smooth , agar scroll effect tidak berpindah tiba-tiba
+
+
+    1. properti css yg digunakan agar scroll effect tidak pindah tiba-tiba ...
+2. sebutkan 3 elemen yg memiliki margin bawaan 
+3. selector yang digunakan u/ memilih seluruh elemen ...
+4. mereset margin untuk membuang margin bawaan dengan margin: ...
+=
+
+    49 troubleshooting laptop:
+        mengetahui jenis laptop u/ cari driver = win+R , dxdiag terus enter
+        di bagian system model cari di google driver nya sesuai os 
+    50 reusable class u/ struktur coding html yg efisien
+    51 container versi display grid u/ menampilkan beberapa cards
+    52 menggunakan elemen article u/ membuat card
+    53 komponen modal dalam website, u/ menampilkan tampilan pop-up 
+
+1. reusable class digunakan u/ menghemat waktu pemrograman, karena class tersebut suatu elemen memiliki > ... class (jawabannya angka)
+2. troubleshoot laptop u/ mengetahui jenis laptop buka menu run dengan shortcut ... + ... lalu ketik .... lalu enter.
+3. display ... sangat cocok u/ section yg menampilkan > 5 object
+4. card yg dibuat pada sesi ini dengan elemen ...
+5. komponen website yg tampil secara pop-up dikenal juga dengan nama ...
+    
+    54 tidak pura pura sakit mental juara
+    55 Allah melindungi jiwa antum hari ini
+    56 meneliti typo sebelum bilang iya ke ana
+    57 meneliti posisi penutup elemen
+        bisa jadi keapus
+        bisa jd masih diatas
+    58 melakukan debugging dengan teknik memotong bagian coding yg dicurigai bermasalah
+    59 senantiasa meminta meminta pertolongan Allah agar diberikan kekuatan mental, menyadari ibadah agar Allah berikan pahala
+    60 debugging: memperbaiki coding yg error
+
+
+    1. memperbaiki coding yg error disebut ...
+    2. diantara sebab perlunya debugging a/ ....
+    3. sebab lain adalah ... pembuka dan ... penutup yg harus diperhatikan pada suatu elemen
+    4. diantara teknik debugging yaitu ... bagian coding yg dicurigai bermasalah
+
+-->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review 1-10</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&display=swap');
+        *{
+            margin: 0;
+            scroll-behavior: smooth;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* 
+        reusable class: 
+        memperkenalkan beberapa class dalam 1 elemen:
+            faidah 1:
+                tidak perlu ketik ulang properti 
+                    walaupun simpel misal display flex + tab 
+                hemat waktu
+                hemat tenaga
+                hemat pikiran
+                minim stress
+        */
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .flex{
+            display: flex;
+        }
+        h1,h2{
+            font-family: "EB Garamond", serif;
+            /* font-family: "Special Gothic Expanded One", sans-serif; */
+            /* font-family: "Montserrat", sans-serif; */
+        }
+        p{
+            /* font-family: Helvetica; */
+            font-family: Arial;
+            /* font-family: "Montserrat", sans-serif; */
+        }
+        span{
+            /* font-family: "EB Garamond", serif; */
+            /* font-family: "Special Gothic Expanded One", sans-serif; */
+        }
+        a{
+            text-decoration: none;
+        }
+        .container{
+            /* background-color: tomato; */
+            margin-inline: 40px;
+            /* margin-block: 30px; */
+        }
+        .header{
+            /* display: flex; */
+            justify-content: space-between;
+            background: #503ab4;
+            background: linear-gradient(90deg, rgba(80, 58, 180, 1) 23%, rgba(179, 42, 197, 1) 46%, rgba(253, 29, 175, 1) 66%, rgba(252, 50, 144, 1) 87%, rgba(252, 69, 69, 1) 100%);            position: fixed;
+            z-index: 100;
+            width: 30%;
+            height: 40px;
+            margin-inline: 0%;
+            border-radius: 30px;
+        }
+        .header_title span{
+            margin-right: 5px;
+        }
+        .header_navigation{
+            display: flex;
+            align-items: center; 
+            gap: 30px;
+        }
+        .header_navigation a{
+            color: black;
+        }
+        .header .fa-bars,
+        .header .fa-circle-xmark{
+            display: none;
+            margin-inline: 20px;
+            margin-block: 4px;
+        }
+        .wrapper{
+            background: #bc54bf;
+            background: linear-gradient(90deg, rgba(188, 84, 191, 1) 2%, rgba(39, 214, 191, 1) 5%, rgba(79, 110, 168, 1) 10%, rgba(138, 227, 100, 1) 17%, rgba(131, 255, 64, 1) 22%, rgba(86, 247, 17, 1) 26%, rgba(141, 181, 121, 1) 30%, rgba(0, 171, 43, 1) 34%, rgba(202, 252, 218, 1) 39%, rgba(43, 129, 135, 1) 44%, rgba(171, 51, 0, 1) 52%, rgba(0, 14, 171, 1) 60%, rgba(0, 171, 168, 1) 67%, rgba(0, 171, 140, 1) 76%, rgba(56, 10, 77, 1) 83%, rgba(92, 8, 63, 1) 90%, rgba(255, 0, 0, 1) 94%);
+        }
+        .wrapper aside{
+            background: #bc54bf;
+            background: linear-gradient(90deg, rgba(188, 84, 191, 1) 2%, rgba(39, 214, 191, 1) 5%, rgba(79, 110, 168, 1) 10%, rgba(138, 227, 100, 1) 17%, rgba(131, 255, 64, 1) 22%, rgba(86, 247, 17, 1) 26%, rgba(141, 181, 121, 1) 30%, rgba(0, 171, 43, 1) 34%, rgba(202, 252, 218, 1) 39%, rgba(43, 129, 135, 1) 44%, rgba(171, 51, 0, 1) 52%, rgba(0, 14, 171, 1) 60%, rgba(0, 171, 168, 1) 67%, rgba(0, 171, 140, 1) 76%, rgba(56, 10, 77, 1) 83%, rgba(92, 8, 63, 1) 90%, rgba(255, 0, 0, 1) 94%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .wrapper aside img{
+            height: 300px;
+        }
+        .wrapper main{
+            width: 50%;
+        }
+        main h1{
+            margin-top: 50px;
+            font-size: clamp(25px,3vw,32px);
+            /* font-size: 32px;
+            font-size: 25px; */
+        }
+        main .buttons{
+            background: #bc54bf;
+            background: linear-gradient(90deg, rgba(188, 84, 191, 1) 2%, rgba(39, 214, 191, 1) 5%, rgba(79, 110, 168, 1) 10%, rgba(138, 227, 100, 1) 17%, rgba(131, 255, 64, 1) 22%, rgba(86, 247, 17, 1) 26%, rgba(141, 181, 121, 1) 30%, rgba(0, 171, 43, 1) 34%, rgba(202, 252, 218, 1) 39%, rgba(43, 129, 135, 1) 44%, rgba(171, 51, 0, 1) 52%, rgba(0, 14, 171, 1) 60%, rgba(0, 171, 168, 1) 67%, rgba(0, 171, 140, 1) 76%, rgba(56, 10, 77, 1) 83%, rgba(92, 8, 63, 1) 90%, rgba(255, 0, 0, 1) 94%);
+            margin-top: 50px;
+            display: flex;
+            /* justify-content: space-between; */
+        }
+        .buttons button{
+            font-size: 0.9375rem;
+            border: 2px solid;
+            cursor: pointer;  
+            border-radius: 8px;
+            padding: 6px 20px; 
+        }
+        .buttons .hire_me{
+            margin-right: 50px;
+            background: #00f729;
+            background: linear-gradient(90deg, rgba(0, 247, 41, 1) 23%, rgba(255, 0, 0, 1) 76%);
+        }
+        section{
+            padding-top: 30px;
+        }
+        .section_title, 
+        .section_detail{
+            text-align: center;
+        }
+        .work_section{
+            background: #bc54bf;
+            background: linear-gradient(90deg, rgba(188, 84, 191, 1) 2%, rgba(39, 214, 191, 1) 5%, rgba(79, 110, 168, 1) 10%, rgba(138, 227, 100, 1) 17%, rgba(131, 255, 64, 1) 22%, rgba(86, 247, 17, 1) 26%, rgba(141, 181, 121, 1) 30%, rgba(0, 171, 43, 1) 34%, rgba(202, 252, 218, 1) 39%, rgba(43, 129, 135, 1) 44%, rgba(171, 51, 0, 1) 52%, rgba(0, 14, 171, 1) 60%, rgba(0, 171, 168, 1) 67%, rgba(0, 171, 140, 1) 76%, rgba(56, 10, 77, 1) 83%, rgba(92, 8, 63, 1) 90%, rgba(255, 0, 0, 1) 94%);        }
+        .my_work{
+            background: #33ab00;
+            background: linear-gradient(90deg, rgba(51, 171, 0, 1) 4%, rgba(255, 0, 0, 1) 42%);
+        }
+        .work_container{
+            justify-content: center;
+            background: #bc54bf;
+            background: linear-gradient(90deg, rgba(188, 84, 191, 1) 2%, rgba(39, 214, 191, 1) 5%, rgba(79, 110, 168, 1) 10%, rgba(138, 227, 100, 1) 17%, rgba(131, 255, 64, 1) 22%, rgba(86, 247, 17, 1) 26%, rgba(141, 181, 121, 1) 30%, rgba(0, 171, 43, 1) 34%, rgba(202, 252, 218, 1) 39%, rgba(43, 129, 135, 1) 44%, rgba(171, 51, 0, 1) 52%, rgba(0, 14, 171, 1) 60%, rgba(0, 171, 168, 1) 67%, rgba(0, 171, 140, 1) 76%, rgba(56, 10, 77, 1) 83%, rgba(92, 8, 63, 1) 90%, rgba(255, 0, 0, 1) 94%);        }
+        .work_card{
+            background-color: aqua;
+            border-radius: 30px;
+            overflow: hidden;
+            /* overflow agar border radius nya keliatan */
+            position: relative;
+            /* porse biar modal nya nanti card nya di belakang modal  */
+            margin: 10px;
+        }
+        .work_card img{
+            width: 100%;
+            height: 100%;
+        }
+        .work_modal{
+            position: absolute;
+            /* posab=depan
+               posre=belakang */
+            /* posab biar modal nya bisa di dpn */
+            left: 0;
+            /* bottom: 0; */
+            bottom: 100%;
+            right: 100%;
+            width: 100%;
+            height: 100%;
+            backdrop-filter: blur(0.01px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #547be6;
+            background: linear-gradient(180deg, rgba(84, 123, 230, 0.73) 10%, rgba(84, 181, 230, 0.75) 30%, rgba(83, 237, 224, 0.82) 54%, rgba(83, 237, 163, 0.85) 76%);
+            transition: bottom 1s;
+        }
+        .work_card:hover .work_modal{
+            bottom: 0;
+        }
+        .about_section{
+            background: #bc54bf;
+            background: linear-gradient(90deg, rgba(188, 84, 191, 1) 2%, rgba(39, 214, 191, 1) 5%, rgba(79, 110, 168, 1) 10%, rgba(138, 227, 100, 1) 17%, rgba(131, 255, 64, 1) 22%, rgba(86, 247, 17, 1) 26%, rgba(141, 181, 121, 1) 30%, rgba(0, 171, 43, 1) 34%, rgba(202, 252, 218, 1) 39%, rgba(43, 129, 135, 1) 44%, rgba(171, 51, 0, 1) 52%, rgba(0, 14, 171, 1) 60%, rgba(0, 171, 168, 1) 67%, rgba(0, 171, 140, 1) 76%, rgba(56, 10, 77, 1) 83%, rgba(92, 8, 63, 1) 90%, rgba(255, 0, 0, 1) 94%);
+        }
+        .contact_section{
+            background: #bc54bf;
+            background: linear-gradient(90deg, rgba(188, 84, 191, 1) 2%, rgba(39, 214, 191, 1) 5%, rgba(79, 110, 168, 1) 10%, rgba(138, 227, 100, 1) 17%, rgba(131, 255, 64, 1) 22%, rgba(86, 247, 17, 1) 26%, rgba(141, 181, 121, 1) 30%, rgba(0, 171, 43, 1) 34%, rgba(202, 252, 218, 1) 39%, rgba(43, 129, 135, 1) 44%, rgba(171, 51, 0, 1) 52%, rgba(0, 14, 171, 1) 60%, rgba(0, 171, 168, 1) 67%, rgba(0, 171, 140, 1) 76%, rgba(56, 10, 77, 1) 83%, rgba(92, 8, 63, 1) 90%, rgba(255, 0, 0, 1) 94%);
+        }
+        .scrollup{
+            position: fixed;
+            right: 1rem;
+            bottom: 1rem;
+            background-color: #000000e5;
+            padding: 10px;
+            border-radius: 0.25rem;
+            font-size: 2rem;
+            color: #af1c1c;
+            box-shadow:10px;
+        }
+
+
+        @media screen and (max-width:1017px){
+            .container{
+                background-color: rgb(133, 128, 128);
+                margin: 0;
+            }
+            header{
+                /* margin-block: 0; */
+                /* padding-block: 0; */
+            }
+            .header_title{
+                font-size: 20px;
+                margin-block: 5px;
+                margin-inline: 10px;
+            }
+            .header_navigation{
+                display: none;
+            }
+            .header .fa-bars{
+                display: block;
+                font-size: 30px;
+            }
+            .wrapper{
+                flex-direction: column;
+            }
+            .wrapper aside{
+                width: 100%;
+            }
+            .wrapper aside img{
+                /* height: 200px;   */
+                height: clamp(200px,50vw,300px);
+            }
+            .wrapper main{
+                /* display: flex;
+                align-items: center; */
+                width: 100%;
+            }
+            .wrapper main h1{
+                /* font-size: 25px; */
+                text-align: center;
+                /* margin-block: 0; */
+                margin-top: 0px;
+                margin-bottom: 10px;
+                line-height: 1.1;
+            }
+            .wrapper main p{
+                text-align: center;
+                /* margin-block: 0; */
+                margin-top: 0;
+                margin-bottom: 15px;
+                font-size: 15px;
+            }
+            .wrapper main .buttons{
+                margin-block: 0;
+                justify-content: center;
+            }
+            .buttons .hire_me{
+                margin-right: 25px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header flex">
+            <h2 class="header_title">
+                <span>Rahlil</span>
+                <i class="fa-solid fa-pen-nib"></i>
+            </h2>
+            <nav class="header_navigation">
+                <a href="">Home</a>
+                <a href="#about">About</a>
+                <a href="">Work</a>
+                <a href="">Contact</a>
+            </nav>
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-circle-xmark"></i>
+        </header>
+        <div class="wrapper">
+            <aside>
+                <img src="./lil.png" alt="">
+            </aside>
+            <main>
+                <h1>
+                    Hi, I'm Rahlil – Crafting Websites Tailored to Your Needs 
+                    <span 
+                    style="font-size: 20px;"> 
+                        🚀
+                    </span>
+                </h1>
+                <p>                    
+                    I’m a Fullstack Developer crafting fast, modern, and intuitive websites.Let’s bring your vision to life with a seamless web experience! 
+                </p>
+                <div class="buttons">
+                    <button class="hire_me">
+                        <span>Hire Me</span>
+                        <i class="fa-solid fa-handshake"></i>
+                    </button>
+                    <button class="my_work">
+                        <span>My Work</span>
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </button>
+                </div>
+            </main>
+        </div>
+        <section class="work_section" id="work">
+            <h2 class="section_title judul">Works</h2>
+            <h3 class="section_detail">Gallery of my projects</h3>
+            <div class="work_container grid">
+                <article class="work_card">
+                    <img src="./cihuyyy.jpg" alt="" class="work_img" >
+                    <div class="work_modal">
+                        <h3 class="work_title">MY WEBSITE</h3>
+                        <h4 class="work_desc">ROOR</h4>
+                        <a href="" class="gotowork_button">
+                            <span>View project</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </article>
+                <article class="work_card">
+                    <img src="./breem.jpg" alt="" class="work_img">
+                    <div class="work_modal">
+                        <h3 class="work_title">MY WEBSITE</h3>
+                        <h4 class="work_desc">SLEEP</h4>
+                        <a href="" class="gotowork_button">
+                            <span>View project</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </article>
+                <article class="work_card">
+                    <img src="./gg.jpg" alt="" class="work_img">
+                    <div class="work_modal">
+                        <h3 class="work_title">MY WEBSITE</h3>
+                        <h4 class="work_desc">CHICKEN🤣🤣</h4>
+                        <a href="" class="gotowork_button">
+                            <span>View project</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </article>
+                <article class="work_card">
+                    <img src="./whaaaaaaat.jpg" alt="" class="work_img">
+                    <div class="work_modal">
+                        <h3 class="work_title">MY WEBSITE</h3>
+                        <h4 class="work_desc">WHAT</h4>
+                        <a href="" class="gotowork_button">
+                            <span>View project</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </article>
+                <article class="work_card">
+                    <img src="./kren.jpg" alt="" class="work_img">
+                    <div class="work_modal">
+                        <h3 class="work_title">MY WEBSITE</h3>
+                        <h4 class="work_desc">NASA</h4>
+                        <a href="" class="gotowork_button">
+                            <span>View project</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </article>
+                <article class="work_card">
+                    <img src="./jysssh.jpg" alt="" class="work_img">
+                    <div class="work_modal">
+
+                        <h3 class="work_title">MY WEBSITE</h3>
+                        <h4 class="work_desc">COOL</h4>
+                        <a href="" class="gotowork_button">
+                            <span>View project</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="about_section" id="about">
+            <h2 class="section_title">About Me</h2>
+            <h3 class="section_detail">Web Designer</h3> 
+        </section>
+        <section class="contact_section" id="contact">
+            <h2 class="section_title">Let's Talk</h2>
+            <h3 class="section_detail">My socials</h3>
+            h
+        </section>
+        <!-- 
+        1. tengahin section title & detail dr css
+        2. ganti baccolor dr tiap section
+        
+        -->
+
+        <a href="#" class="scrollup" id="scrollup">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
+    </div>
+</body>
+</html>
